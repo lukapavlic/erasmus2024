@@ -37,7 +37,7 @@ public class Person {
     public long getAge() {
         long ret=ChronoUnit.YEARS.between(birthDate, LocalDate.now());
         if (ret<0) ret=0;
-        return 24;
+        return ret;
     }
 
     public boolean isInRelationWith(Person person2) {
